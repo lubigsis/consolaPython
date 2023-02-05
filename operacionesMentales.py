@@ -21,8 +21,8 @@ def mostrarIntroduccion():
     print()
     print('Si quieres dejarlo para otro día, escribe: salir')
     print()
-  
-   
+
+
 def despedida():
     print('¡Hasta pronto!')
 
@@ -99,18 +99,36 @@ def division():
 mostrarIntroduccion()
 
 operacionElegida= input()
+counter= 0
 
 if operacionElegida == 'sumar' or operacionElegida == 'SUMAR':
-    suma()
+    while counter < 10:
+      suma()      
+      estimacionUser= input()
+      counter= counter +1 
+   
 
 elif operacionElegida == 'restar' or operacionElegida == 'RESTAR':
-    resta()
+      while counter < 10:
+        resta()
+        estimacionUser= input()
+        counter= counter +1
 
 elif operacionElegida == 'multiplicar' or operacionElegida == 'MULTIPLICAR':
-    multiplicacion()
+      while counter < 10:
+        multiplicacion()
+        estimacionUser= input()
+        counter= counter +1
 
 elif operacionElegida == 'dividir' or operacionElegida == 'DIVIDIR':
-    division()
+      while counter <10:
+        division()
+        estimacionUser= input()
+        counter= counter +1
 
 else:
      print('Escribe corectamente la operación que deseas realizar')
+
+
+
+
