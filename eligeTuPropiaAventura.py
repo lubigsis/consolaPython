@@ -7,8 +7,19 @@ print('Opción 1)... \nOpción 2)... \nOpción 3)...')
 
 respuestaUser= input()
 
-historias1[
-    "0- Acá escribir la primera historia1. \n Elige otra opción para continuar: ",
-    "1",
-    "2"
+historias = [
+    "0- Acá escribir la primera historia0. \n Elige otra opción para continuar: ",
+    "1- Acá escribir la segunda historia1. \n Elige otra opción para continuar: ",
+    "2- Acá escribir la segunda historia2. \n Elige otra opción para continuar: "
 ]
+
+def mostrarHistoria(numeroOpcion):
+    text = historias[numeroOpcion]
+    print(text)
+
+    respuesta = input()
+    mostrarHistoria(int(respuesta))
+
+    mostrarHistoria(0)
+
+    #terminar
